@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Smart Sachivalayam - office address, phone, email, and contact form.">
+  <title>Contact | Smart Sachivalayam Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loader"></div>
+    <p class="loader-text">Loading...</p>
+  </div>
+
+  <header class="header">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🏛️</span>
+        <span>Smart Sachivalayam</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="notices.html" class="nav-link">Notices</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li><a href="login.html" class="nav-link staff-link">Staff Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Get in touch with your Sachivalayam — we're here to help</p>
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a> / <span>Contact</span>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Information -->
+          <div class="contact-info-card">
+            <h2 style="color: var(--primary); margin-bottom: 1.5rem;">Office Information</h2>
+
+            <div class="contact-info-item">
+              <div class="icon">📍</div>
+              <div>
+                <h4>Office Address</h4>
+                <p>Ward Secretariat Building,<br>Main Road, Ward No. 5,<br>District Headquarters,<br>Andhra Pradesh – 522001</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="icon">📞</div>
+              <div>
+                <h4>Phone Number</h4>
+                <p>Helpline: 1800-425-0000<br>Office: +91 863 234 5678<br>Fax: +91 863 234 5679</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="icon">✉️</div>
+              <div>
+                <h4>Email Address</h4>
+                <p>General: info@sachivalayam.gov.in<br>Grievances: grievance@sachivalayam.gov.in<br>Support: support@sachivalayam.gov.in</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="icon">🕐</div>
+              <div>
+                <h4>Office Hours</h4>
+                <p>Monday – Saturday: 9:00 AM – 5:00 PM<br>Sunday & Public Holidays: Closed<br>Lunch Break: 1:00 PM – 2:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <h2 style="color: var(--primary); margin-bottom: 1.5rem;">Send a Message</h2>
+            <div class="success-message" id="contactSuccess"></div>
+
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="contactName">Full Name</label>
+                <input type="text" id="contactName" placeholder="Enter your full name" required>
+                <span class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" placeholder="your.email@example.com" required>
+                <span class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactPhone">Mobile Number</label>
+                <input type="tel" id="contactPhone" placeholder="10-digit mobile number" maxlength="10" required>
+                <span class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject">Subject</label>
+                <select id="contactSubject">
+                  <option value="general">General Inquiry</option>
+                  <option value="certificate">Certificate Related</option>
+                  <option value="pension">Pension Related</option>
+                  <option value="grievance">Grievance</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" rows="5" placeholder="Describe your query or concern..." required></textarea>
+                <span class="error-message"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Google Maps Placeholder -->
+        <div class="map-placeholder">
+          <div class="map-icon">🗺️</div>
+          <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Google Maps</h3>
+          <p>Ward Secretariat Building, Main Road, Ward No. 5, District HQ</p>
+          <p style="font-size: 0.85rem; margin-top: 0.5rem;">Map integration placeholder — embed Google Maps iframe here for production deployment.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Smart Sachivalayam Portal</h3>
+          <p>We are committed to serving citizens with dedication and transparency.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="notices.html">Notices</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul class="footer-contact">
+            <li>📍 Main Road, Ward No. 5</li>
+            <li>📞 1800-425-0000</li>
+            <li>✉️ info@sachivalayam.gov.in</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Smart Sachivalayam Portal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

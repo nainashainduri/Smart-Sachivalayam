@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart Sachivalayam Portal - Access citizen services, notices, and government schemes at your doorstep.">
+  <title>Home | Smart Sachivalayam Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loader"></div>
+    <p class="loader-text">Loading Smart Sachivalayam Portal...</p>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🏛️</span>
+        <span>Smart Sachivalayam</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="notices.html" class="nav-link">Notices</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link staff-link">Staff Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Welcome to Smart Sachivalayam Portal</h1>
+          <p>Your gateway to seamless government services. Access certificates, pensions, ration cards, and more — all at your nearest Sachivalayam, designed to serve every citizen with transparency and efficiency.</p>
+          <div class="hero-buttons">
+            <a href="services.html" class="btn btn-primary">Explore Services</a>
+            <a href="notices.html" class="btn btn-secondary">View Notices</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-stat">
+              <div class="hero-stat-icon">👥</div>
+              <div>
+                <strong>5,000+</strong>
+                <span>Citizens Served Monthly</span>
+              </div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-icon">📋</div>
+              <div>
+                <strong>25+</strong>
+                <span>Services Available</span>
+              </div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-icon">⏱️</div>
+              <div>
+                <strong>7 Days</strong>
+                <span>Average Processing Time</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="section-title">Quick Services</h2>
+        <p class="section-subtitle">Access essential government services quickly and conveniently through your Sachivalayam.</p>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">📜</div>
+            <h3>Certificates</h3>
+            <p>Apply for income, caste, residence, and other official certificates with ease.</p>
+            <a href="services.html#certificates" class="card-link">Learn more →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">👴</div>
+            <h3>Pension Services</h3>
+            <p>Old age, widow, and disability pension registration and disbursement support.</p>
+            <a href="services.html#pension" class="card-link">Learn more →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🛒</div>
+            <h3>Ration Card</h3>
+            <p>New applications, modifications, and verification for ration card holders.</p>
+            <a href="services.html#ration" class="card-link">Learn more →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">📢</div>
+            <h3>Grievance Redressal</h3>
+            <p>Register complaints and track resolution status for all Sachivalayam services.</p>
+            <a href="services.html#grievance" class="card-link">Learn more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Important Announcements -->
+    <section class="section announcements-section" id="announcements">
+      <div class="container">
+        <h2 class="section-title">Important Announcements</h2>
+        <p class="section-subtitle">Stay updated with the latest notices and announcements from your Sachivalayam.</p>
+        <div class="announcement-list" id="homeAnnouncements">
+          <!-- Populated by JavaScript -->
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="notices.html" class="btn btn-outline">View All Notices</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Smart Sachivalayam Portal</h3>
+          <p>Delivering government services at your doorstep with transparency, accountability, and citizen-centric approach.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Sachivalayam</a></li>
+            <li><a href="services.html">Citizen Services</a></li>
+            <li><a href="notices.html">Notice Board</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact Information</h3>
+          <ul class="footer-contact">
+            <li>📍 Main Road, Ward No. 5, District HQ</li>
+            <li>📞 Helpline: 1800-425-0000</li>
+            <li>✉️ info@sachivalayam.gov.in</li>
+            <li>🕐 Mon–Sat: 9:00 AM – 5:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Smart Sachivalayam Portal. All rights reserved. | Government of Andhra Pradesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Citizen services - certificates, pension, ration card, grievance services and downloadable forms.">
+  <title>Citizen Services | Smart Sachivalayam Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loader"></div>
+    <p class="loader-text">Loading...</p>
+  </div>
+
+  <header class="header">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🏛️</span>
+        <span>Smart Sachivalayam</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link active">Services</a></li>
+        <li><a href="notices.html" class="nav-link">Notices</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="login.html" class="nav-link staff-link">Staff Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1>Citizen Services</h1>
+        <p>Complete guide to services available at your Sachivalayam</p>
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a> / <span>Services</span>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Certificates -->
+        <article class="service-detail" id="certificates">
+          <div class="service-detail-header">
+            <span class="icon">📜</span>
+            <h3>Certificates Information</h3>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">Apply for various official certificates required for education, employment, and government schemes.</p>
+          <ul>
+            <li>Birth Certificate — Required documents: Hospital record, parent Aadhaar</li>
+            <li>Death Certificate — Required documents: Hospital/death report, applicant ID</li>
+            <li>Marriage Certificate — Required documents: Marriage registration, witness details</li>
+            <li>Processing time: 7–15 working days depending on certificate type</li>
+            <li>Visit Sachivalayam with original documents and photocopies</li>
+          </ul>
+        </article>
+
+        <!-- Pension -->
+        <article class="service-detail" id="pension">
+          <div class="service-detail-header">
+            <span class="icon">👴</span>
+            <h3>Pension Services</h3>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">Social security pensions for eligible citizens including old age, widow, and disability pensions.</p>
+          <ul>
+            <li>Old Age Pension — Age 60+ with BPL status, ₹2,000/month</li>
+            <li>Widow Pension — For widows above 18 years, income criteria apply</li>
+            <li>Disability Pension — 40%+ disability with medical certificate</li>
+            <li>Disbursement on 1st and 15th of every month</li>
+            <li>Annual life certificate verification required</li>
+          </ul>
+        </article>
+
+        <!-- Ration Card -->
+        <article class="service-detail" id="ration">
+          <div class="service-detail-header">
+            <span class="icon">🛒</span>
+            <h3>Ration Card Services</h3>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">Apply for new ration cards, modifications, and member additions/deletions.</p>
+          <ul>
+            <li>New Ration Card — Aadhaar of all members, address proof, passport photo</li>
+            <li>Member Addition — Birth certificate or Aadhaar of new member</li>
+            <li>Category Change — Income certificate for APL/BPL conversion</li>
+            <li>Duplicate Card — FIR copy in case of lost card</li>
+            <li>Biometric verification mandatory for all cardholders</li>
+          </ul>
+        </article>
+
+        <!-- Income Certificate -->
+        <article class="service-detail" id="income">
+          <div class="service-detail-header">
+            <span class="icon">💰</span>
+            <h3>Income Certificate</h3>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">Required for scholarships, fee concessions, and welfare scheme eligibility.</p>
+          <ul>
+            <li>Valid for 1 year from date of issue</li>
+            <li>Required: Aadhaar, address proof, self-declaration of income</li>
+            <li>Processing time: 7 working days</li>
+            <li>Fee: Free of cost at Sachivalayam</li>
+          </ul>
+        </article>
+
+        <!-- Caste Certificate -->
+        <article class="service-detail" id="caste">
+          <div class="service-detail-header">
+            <span class="icon">📋</span>
+            <h3>Caste Certificate</h3>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">For reservation benefits in education and employment.</p>
+          <ul>
+            <li>Required: Parent's caste certificate or school records</li>
+            <li>Affidavit and community certificate from local authority</li>
+            <li>Processing time: 15 working days</li>
+            <li>Verification by Revenue official may be required</li>
+          </ul>
+        </article>
+
+        <!-- Residence Certificate -->
+        <article class="service-detail" id="residence">
+          <div class="service-detail-header">
+            <span class="icon">🏠</span>
+            <h3>Residence Certificate</h3>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">Proof of residence for domicile and local quota purposes.</p>
+          <ul>
+            <li>Required: Aadhaar, voter ID, or utility bill as address proof</li>
+            <li>Minimum 5 years residence in the ward for domicile certificate</li>
+            <li>Processing time: 7 working days</li>
+            <li>Valid for 3 years</li>
+          </ul>
+        </article>
+
+        <!-- Grievance -->
+        <article class="service-detail" id="grievance">
+          <div class="service-detail-header">
+            <span class="icon">📢</span>
+            <h3>Grievance Services</h3>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">Register and track complaints related to any Sachivalayam service.</p>
+          <ul>
+            <li>Register grievances in person or through contact form</li>
+            <li>Receive acknowledgment with tracking number</li>
+            <li>Resolution timeline: 15–30 days depending on issue</li>
+            <li>Escalation to Mandal level if unresolved within 30 days</li>
+            <li>Monthly grievance redressal camps held at Sachivalayam</li>
+          </ul>
+        </article>
+
+        <!-- Download Forms -->
+        <div style="margin-top: 3rem;">
+          <h2 class="section-title">Download Forms</h2>
+          <p class="section-subtitle">Download application forms for various services. Fill and submit at your Sachivalayam.</p>
+          <div class="forms-grid">
+            <div class="form-download-card">
+              <div class="form-info">
+                <h4>Income Certificate Form</h4>
+                <span>PDF · 2 pages</span>
+              </div>
+              <button class="btn btn-outline btn-sm download-btn" data-form="Income Certificate Form">Download</button>
+            </div>
+            <div class="form-download-card">
+              <div class="form-info">
+                <h4>Caste Certificate Form</h4>
+                <span>PDF · 3 pages</span>
+              </div>
+              <button class="btn btn-outline btn-sm download-btn" data-form="Caste Certificate Form">Download</button>
+            </div>
+            <div class="form-download-card">
+              <div class="form-info">
+                <h4>Residence Certificate Form</h4>
+                <span>PDF · 2 pages</span>
+              </div>
+              <button class="btn btn-outline btn-sm download-btn" data-form="Residence Certificate Form">Download</button>
+            </div>
+            <div class="form-download-card">
+              <div class="form-info">
+                <h4>Ration Card Application</h4>
+                <span>PDF · 4 pages</span>
+              </div>
+              <button class="btn btn-outline btn-sm download-btn" data-form="Ration Card Application">Download</button>
+            </div>
+            <div class="form-download-card">
+              <div class="form-info">
+                <h4>Pension Application Form</h4>
+                <span>PDF · 3 pages</span>
+              </div>
+              <button class="btn btn-outline btn-sm download-btn" data-form="Pension Application Form">Download</button>
+            </div>
+            <div class="form-download-card">
+              <div class="form-info">
+                <h4>Grievance Registration Form</h4>
+                <span>PDF · 2 pages</span>
+              </div>
+              <button class="btn btn-outline btn-sm download-btn" data-form="Grievance Registration Form">Download</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Smart Sachivalayam Portal</h3>
+          <p>Delivering government services at your doorstep.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="notices.html">Notices</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul class="footer-contact">
+            <li>📞 1800-425-0000</li>
+            <li>✉️ info@sachivalayam.gov.in</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Smart Sachivalayam Portal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
